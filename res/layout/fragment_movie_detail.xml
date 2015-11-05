@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView app:id="@id/tv_title" app:layout_width="-1" app:layout_height="-1" app:layout_behavior="@string/main_sort_by">
+    <LinearLayout app:orientation="1" app:paddingLeft="@dimen/activity_horizontal_margin" app:paddingTop="@dimen/activity_vertical_margin" app:paddingRight="@dimen/activity_horizontal_margin" app:paddingBottom="@dimen/activity_vertical_margin" app:layout_width="-1" app:layout_height="-2"
+        <LinearLayout app:layout_width="-1" app:layout_height="-2">
+            <ImageView app:id="@id/snackbar_text" app:layout_width="80dp" app:layout_height="-2" app:src="@color/grey" app:adjustViewBounds="true" />
+            <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="16dp">
+                <TextView app:textAppearance="@style/TextAppearance_AppCompat_Large" app:id="@id/snackbar_action" app:layout_width="-2" app:layout_height="-2" app:text="Title" />
+                <TextView app:textAppearance="@style/TextAppearance_AppCompat_Caption" app:id="@id/action0" app:layout_width="-2" app:layout_height="-2" app:text="Release date - xxx minutes" />
+                <TextView app:textAppearance="@style/TextAppearance_AppCompat_Caption" app:id="@id/cancel_action" app:layout_width="-2" app:layout_height="-2" app:text="x.x/10" />
+                <Button app:id="@id/status_bar_latest_event_content" app:background="?unknown_attr_ref: 101030e" app:layout_width="-2" app:layout_height="-2" app:text="@string/main_add_to_fav" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView app:textSize="16sp" app:id="@id/media_actions" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="16dp" app:text="Lorem ipsum dolor sit amet." />
+        <View app:background="@color/grey" app:layout_width="-1" app:layout_height="1dp" app:layout_marginTop="16dp" app:layout_marginBottom="16dp" />
+        <LinearLayout app:orientation="1" app:id="@id/action_divider" app:layout_width="-1" app:layout_height="-2">
+            <TextView app:textStyle="1" app:id="@id/line1" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="16dp" app:text="@string/progress_retry" />
+        </LinearLayout>
+        <View app:background="@color/grey" app:layout_width="-1" app:layout_height="1dp" app:layout_marginTop="16dp" app:layout_marginBottom="16dp" />
+        <LinearLayout app:orientation="1" app:id="@id/time" app:layout_width="-1" app:layout_height="-2">
+            <TextView app:textStyle="1" app:id="@id/chronometer" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="16dp" app:text="@string/progress_error" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

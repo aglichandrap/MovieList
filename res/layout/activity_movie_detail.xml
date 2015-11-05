@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    app:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_height="match_parent"
+    app:fitsSystemWindows="true" >
+    
+
+    <android.support.design.widget.AppBarLayout 
+        
+        app:theme="@style/ThemeOverlay_AppCompat_Dark_ActionBar" 
+        app:id="@id/toolbar" 
+        app:fitsSystemWindows="true" 
+        app:layout_width="match_parent" 
+        app:layout_height="@dimen/app_bar_height">
+        
+        <android.support.design.widget.CollapsingToolbarLayout 
+            app:id="@+id/iv_backdrop" 
+            app:fitsSystemWindows="true" 
+            app:layout_width="match_parent" 
+            app:layout_height="match_parent" 
+            app:layout_scrollFlags="3" 
+            app:expandedTitleTextAppearance="@+style/TextAppearanceTransparent" 
+            app:contentScrim="@+color/colorPrimary" 
+            app:toolbarId="@+id/recycler_view">
+            
+            <ImageView 
+                
+                app:id="@+id/iv_poster" 
+                app:fitsSystemWindows="true" 
+                app:layout_width="match_parent" 
+                app:layout_height="@+dimen/app_bar_height" 
+                app:scaleType="6" 
+                app:layout_collapseMode="2" 
+                android:contentDescription="TODO"/>
+            
+            <android.support.v7.widget.Toolbar 
+                app:id="@+id/recycler_view" 
+                app:layout_width="match_parent" 
+                app:layout_height="match_parent" 
+                app:popupTheme="@style/ThemeOverlay_AppCompat_Light" 
+                 />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout 
+        app:id="@+id/tv_title" 
+        app:layout_width="match_parent" 
+        app:layout_height="match_parent" 
+        app:layout_behavior="@+string/main_sort_by" />
+    
+</android.support.design.widget.CoordinatorLayout>
